@@ -19,7 +19,7 @@
       <div id="cronometro">00:00:00</div>
     </header>
     
-    <div class="torres">
+    <section class="torres">
       <div class="torre">
         <div class="disco disco-1" draggable="true" id="disco-1"></div>
         <div class="disco disco-2" draggable="true" id="disco-2" ></div>
@@ -27,7 +27,24 @@
       </div>
       <div class="torre"></div>
       <div class="torre"></div>
-    </div>
+    </section>
+
+    <section class="ranking">
+      <table>
+        <thead>
+          <tr>
+            <th>Id</th>
+            <th>Nombre</th>
+            <th>Tiempo</th>
+          </tr>
+        </thead>
+        <tbody class="tableRanking">
+
+        </tbody>
+      </table>
+    </section>
+
     <script src="script.js"></script>
+    <script src="./js/main.js" type="module"></script>
   </body>
 </html>
