@@ -8,14 +8,22 @@
     <title>Document</title>
   </head>
   <body>
+
+    <header>
+      <h1>Torres de Hanoi</h1>
+      <form id="formInicio">
+        <label for="">Nombre de Usuario</label>
+        <input type="text" name="NombreUsuario">
+        <input type="submit" value="Iniciar">
+      </form>
+      <div id="cronometro">00:00:00</div>
+    </header>
+    
     <div class="torres">
       <div class="torre">
         <div class="disco disco-1" draggable="true" id="disco-1"></div>
-        <div class="disco disco-2" draggable="true" id="disco-2"></div>
+        <div class="disco disco-2" draggable="true" id="disco-2" ></div>
         <div class="disco disco-3" draggable="true" id="disco-3"></div>
-        <div class="disco disco-4" draggable="true" id="disco-4"></div>
-        <div class="disco disco-5" draggable="true" id="disco-5"></div>
-        <div class="disco disco-6" draggable="true" id="disco-6"></div>
       </div>
       <div class="torre"></div>
       <div class="torre"></div>
