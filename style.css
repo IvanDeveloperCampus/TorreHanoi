@@ -1,0 +1,53 @@
+.torres{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: 10rem;
+  }
+  
+  .torre {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    width: 120px;
+    height: 240px;
+    border: 2px solid black;
+    margin: 0 10px;
+    padding-top: 10px;
+  }
+  
+  .disco {
+    width: 100px;
+    height: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .disco-1 {
+    background-color: #ff0000;
+    width: 100px;
+  }
+  
+  .disco-2 {
+    background-color: #00ff00;
+    width: 85px;
+  }
+  
+  .disco-3 {
+    background-color: #0000ff;
+    width: 70px;
+  }
+  
+  .disco-4 {
+    background-color: #ffff00;
+    width: 55px;
+  }
+  
+  .disco-5 {
+    background-color: #ff00ff;
+    width: 40px;
+  }
+  
+  .disco-6 {
+    background-color: #00ff;
+    width: 25px;
+  }
