@@ -56,12 +56,16 @@ function verificarTamaño(discoNuevo, disco2) {
 }
 
 function win() {
-  torres.forEach((torre) => {
-    if (torre.childElementCount === 3) {
-      alert("Has ganadoooo");
+  
+    if (torres[1].childElementCount === 6 || torres[2].childElementCount===6) {
+      Swal.fire(
+        'Good job!',
+        'Has Ganadooo!',
+        'success'
+      )
       metodos.guardarRegistro();
     }
-  });
+ 
 }
 
 const cron = document.querySelector("#cronometro");
