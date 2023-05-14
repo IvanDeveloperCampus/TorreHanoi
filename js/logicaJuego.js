@@ -25,6 +25,7 @@ const eventos = () => {
   });
 };
 
+let movimientos=0
 const soltarDisco = (e) => {
   const torreActual = e.target;
   e.preventDefault();
@@ -34,6 +35,7 @@ const soltarDisco = (e) => {
   const tamaño = verificarTamaño(discoActual, ultimoDisco);
   if (tamaño) {
     torreActual.appendChild(discoActual);
+    movimientos++;
     win();
   }
 };
@@ -59,8 +61,8 @@ function win() {
   
     if (torres[1].childElementCount === 6 || torres[2].childElementCount===6) {
       Swal.fire(
-        'Good job!',
-        'Has Ganadooo!',
+        'Buen Trabajo!',
+        `Has Ganadooo! con ${movimientos} movimientos`,
         'success'
       )
       metodos.guardarRegistro();
