@@ -9,6 +9,8 @@ export const addUser=async (user)=>{
                 "Content-Type":"application/json"
             }
         })
+        location.reload();
+        
     } catch (error) {
         
     }
