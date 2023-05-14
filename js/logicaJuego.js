@@ -74,6 +74,9 @@ let tiempoactual;
 let tiempoIntervalo;
 
 function iniciarCronometro() {
+  discos.forEach((disco) => {
+    disco.style.display = "block";
+  })
   tiempoactual = Date.now();
   tiempoIntervalo = setInterval(actualizarCronometro, 1000);
 }

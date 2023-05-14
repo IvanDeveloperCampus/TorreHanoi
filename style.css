@@ -75,31 +75,37 @@ h1{
   .disco-1 {
     background-color: #ff0000;
     width: 200px;
+    display: none;
   }
   
   .disco-2 {
     background-color: #00ff00;
     width: 160px;
+    display: none;
   }
   
   .disco-3 {
     background-color: #0000ff;
     width: 120px;
+    display: none;
   }
   
   .disco-4 {
     background-color: #ffff00;
     width: 80px;
+    display: none;
   }
   
   .disco-5 {
     background-color: #ff00ff;
     width: 40px;
+    display: none;
   }
   
   .disco-6 {
     background-color: rgb(255, 166, 0);
     width: 20px;
+    display: none;
   }
 
   
