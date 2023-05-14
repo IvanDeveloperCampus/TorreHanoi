@@ -6,7 +6,11 @@ const torres = document.querySelectorAll(".torre");
 const eventos = () => {
   discos.forEach((disco) => {
     disco.addEventListener("dragstart", (e) => {
-      e.dataTransfer.setData("text/plain", e.target.id);
+      if (e.target.parentElement.lastElementChild === e.target) {
+        e.dataTransfer.setData("text/plain", e.target.id);
+      } else {
+        e.preventDefault();
+      }
     });
     disco.addEventListener("dragend", (e) => {
       e.dataTransfer.clearData();
