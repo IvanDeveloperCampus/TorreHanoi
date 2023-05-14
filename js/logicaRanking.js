@@ -12,7 +12,7 @@ const obtenerUser = async () => {
   let html = "";
   ranking.map((info) => {
     html += `
-            <tr>
+            <tr class="text-center">
                 <td>${info.id}</td>
                 <td>${info.name}</td>
                 <td>${info.tiempo}</td>
